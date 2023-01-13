@@ -3,23 +3,6 @@
   "version": "0.1.3",
   "description": "Utility functions to get storybook data for Zeplin's client apps",
   "main": "dist/index.js",
-  "scripts": {
-    "lint": "eslint .",
-    "prebuild": "rm -rf dist",
-    "build": "webpack",
-    "install:husky": "husky install",
-    "prepare": "npm-run-all install:husky build",
-    "deploy-to-appcenter": "appcenter distribute release"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/zeplin/storybook-inspector.git"
-  },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/zeplin/storybook-inspector/issues"
-  },
-  "homepage": "https://github.com/zeplin/storybook-inspector#readme",
   "dependencies": {
     "lit-html": "^2.0.0-rc.3",
     "prettier": "^2.4.1",
@@ -48,8 +31,5 @@
     "webpack": "^5.56.1",
     "webpack-cli": "^4.8.0",
     "webpack-node-externals": "^3.0.0"
-  },
-  "lint-staged": {
-    "*.ts": "eslint --cache --fix --max-warnings 0"
   }
 }
